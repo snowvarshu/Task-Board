@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tasky</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <h2>Add New Task</h2>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Task Title"
+            >
+
+            <textarea
+                id="description"
+                placeholder="Description"
+            ></textarea>
+
+            <select id="priority">
+
+                <option value="Low">Low</option>
+
+                <option value="Medium" selected>Medium</option>
+
+                <option value="High">High</option>
+
+            </select>
+
+            <select id="status">
+
+                <option value="Todo">Todo</option>
+
+                <option value="In Progress">In Progress</option>
+
+                <option value="Done">Done</option>
+
+            </select>
+
+            <input
+                type="date"
+                id="due_date"
+            >
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+        </div>
+
+
+        <div id="taskList" class="task-container">
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

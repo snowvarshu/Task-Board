@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffe6f2;
+    min-height:100vh;
+    padding:40px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#d63384;
+    font-size:40px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+
+.form-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(214,51,132,.2);
+    margin-bottom:30px;
+}
+
+.form-card h2{
+    color:#d63384;
+    margin-bottom:20px;
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+
+    border:2px solid #ffb3d9;
+    border-radius:10px;
+
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#ff4da6;
+
+}
+
+textarea{
+
+    resize:none;
+    height:120px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#ff4da6;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#d63384;
+
+}
+
+/* Task Cards */
+
+.task-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+    gap:20px;
+
+}
+
+.task{
+
+    background:white;
+
+    border-left:8px solid hotpink;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.task:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.task h3{
+
+    color:#d63384;
+
+    margin-bottom:10px;
+
+}
+
+.task p{
+
+    margin:8px 0;
+
+}
+
+.priority{
+
+    display:inline-block;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    color:white;
+
+    margin-top:10px;
+
+}
+
+.high{
+
+    background:#ff0066;
+
+}
+
+.medium{
+
+    background:#ff66b3;
+
+}
+
+.low{
+
+    background:#ff99cc;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    margin-left:10px;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    background:#ffd6eb;
+
+    color:#d63384;
+
+    font-weight:bold;
+
+}
+
+
+.actions{
+
+    margin-top:15px;
+
+}
+
+.actions button{
+
+    width:auto;
+
+    padding:10px 15px;
+
+    margin-right:10px;
+
+}
+
+.edit{
+
+    background:#ff66b3;
+
+}
+
+.delete{
+
+    background:#ff0066;
+
+}
+
+.edit:hover{
+
+    background:#e83e8c;
+
+}
+
+.delete:hover{
+
+    background:#c2185b;
+
+}
+
+
+@media(max-width:768px){
+
+.container{
+
+width:95%;
+
+}
+
+header h1{
+
+font-size:30px;
+
+}
+
+}
